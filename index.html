@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Bootstrap Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .post-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="Rasel Ahmed.png" alt="Profile" width="40" height="40" class="rounded-circle me-2" />
+        <span>Rasel Ahmed</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="Rasel Ahmed.png" alt="Rasel Ahmed" class="img-fluid rounded-circle shadow" style="width: 300px; height: 300px; object-fit: cover;">
+        </div>
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold">Unleash your creativity</h1>
+          <p class="lead text-muted">
+            Welcome to MyBlog – where I share thoughts, experiences, and creative insights. Let's explore the world together, one post at a time.
+          </p>
+          <a href="#blog-posts" class="btn btn-danger btn-lg mt-3">Find out more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Posts -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card post-card">
+          <img src="./1.jpeg" class="card-img-top" alt="Post image">
+          <div class="card-body">
+            <h5 class="card-title">First Blog Post</h5>
+            <p class="card-text">A short excerpt from the first post. It's a great read!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card post-card">
+          <img src="./2.jpeg" class="card-img-top" alt="Post image">
+          <div class="card-body">
+            <h5 class="card-title">Second Blog Post</h5>
+            <p class="card-text">Some interesting insights await you in this post.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card post-card">
+          <img src="./3.jpeg" class="card-img-top" alt="Post image">
+          <div class="card-body">
+            <h5 class="card-title">Third Blog Post</h5>
+            <p class="card-text">Check out this exciting story from our writer.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature -->
+
+  <div class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Latest articles</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Article 1 -->
+        <div class="mb-5">
+          <img src="./4.jpeg" class="img-fluid rounded mb-3" alt="Article image">
+          <span class="badge bg-danger category-badge">Motivation</span>
+          <h3 class="article-title mt-2">It’s ok to work in a bar while getting a degree</h3>
+          <p>by <span class="author-name">Liam Adams</span></p>
+          <p class="text-muted">Progressively evolve functional niches without ethical architectures. Uniquely plagiarize cost effective infomediaries...</p>
+        </div>
+        <!-- Article 2 -->
+        <div>
+          <img src="./5.jpeg" class="img-fluid rounded mb-3" alt="Article image">
+          <span class="badge bg-danger category-badge">Lifestyle</span>
+          <h3 class="article-title mt-2">How to master the art of choosing the right gift</h3>
+          <p>by <span class="author-name">Gemma Lawson</span></p>
+          <p class="text-muted">Appropriately optimize team building manufactured products vis-a-vis leading-edge imperatives...</p>
+        </div>
+      </div>
+
+      
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="mb-4 p-4 bg-light rounded shadow-sm">
+          <h5>Newsletter</h5>
+          <p>Make sure to subscribe to our newsletter and be the first to know the news.</p>
+          <input type="email" class="form-control mb-2" placeholder="Your email address">
+          <button class="btn btn-danger w-100">Subscribe</button>
+        </div>
+        <div class="mb-4 p-4 bg-light rounded shadow-sm">
+          <h5>Topics</h5>
+          <ul class="list-unstyled">
+            <li>Art <span class="float-end">6</span></li>
+            <li>Fashion <span class="float-end">8</span></li>
+            <li>Lifestyle <span class="float-end">13</span></li>
+            <li>Motivation <span class="float-end">12</span></li>
+            <li>Travel <span class="float-end">8</span></li>
+          </ul>
+        </div>
+        <div class="p-4 bg-dark text-white rounded shadow-sm">
+          <h5>Let's get social</h5>
+          <p>We are a team of dedicated professionals delivering high quality WordPress themes and plugins.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+  
+        <!-- About -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">MyBlog</h5>
+          <p>Sharing thoughts, ideas, and stories from everyday life and beyond.</p>
+        </div>
+  
+        <!-- Links -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+          <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#" class="text-white text-decoration-none">About</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Blog</a></p>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+            <p><i class="bi bi-house-fill me-2"></i>Rupganj, Narayangonj, Dhaka</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>rasel63840@gmail.com</p>
+            <p><i class="bi bi-phone-fill me-2"></i>01863840408</p>
+          </div>
+  
+        <!-- Social -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+          <a href="https://www.facebook.com/rasel.ahammed.33865" class="text-white me-4"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="https://x.com/RaselAhmed12812" class="text-white me-4"><i class="bi bi-twitter"></i> Twitter</a><br>
+          <a href="https://www.instagram.com/raselahmed63840/" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+  
+      <hr class="mb-4">
+  
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-white">© 2025 MyBlog. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
